@@ -1,0 +1,17 @@
+{% extends "_base.html" %}
+{% block body %}
+<div class="large-8 columns">
+    <h1>Mashin Music all day.</h1>
+    <h5>Discover Music</h5>
+
+    <div class="box">
+        <div id="discover"><p>Loading...</p></div>
+        <script>
+        require(['widgets/discover'], function (discoverWidget) {
+            discoverWidget.create('#discover').render();
+        });
+        </script>
+    </div>
+</div>
+
+{% endblock %}
