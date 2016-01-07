@@ -18,7 +18,6 @@ function ($, discoverDataStream, debug,
                 event.preventDefault();
                 self.search();
             };
-            //this.$element.on('change keyup', '[name="search"]', searchHandler);
             this.$element.on('submit', 'form', searchHandler);
         },
         search: function () {

@@ -1,0 +1,10 @@
+{{#if songs }}
+    <ul class="songs">
+    {{#each songs }}
+    <li class="song"data-title="{{ title }}" data-artist="{{ artist }}"
+        >{{ title }} - {{ artist }}</li>
+    {{/each}}
+    </ul>
+{{#else}}
+    <p>No songs in playlist</p>
+{{/if}}

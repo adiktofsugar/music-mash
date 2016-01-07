@@ -1,0 +1,23 @@
+<div class="details-widget">
+    {{#if item.image }}
+    <div class="row-collapse">
+        <div class="large-3 columns">
+            <img src="{{ item.image }}" />
+        </div>
+        <div class="large-9 columns">
+            <h3>{{ item.title }}<small>{{ item.type }}</h3>
+        </div>
+    </div>
+    {{#else}}
+    <h3>{{ item.title }}<small>{{ item.type }}</h3>
+    {{/if}}
+    
+    <div class="actions">
+        <ul class="inline-list">
+            <li><a href="#" data-action="startRadio">Start Radio</a></li>
+            <li><a href="#" data-action="listSongs">List Songs</a></li>
+        </ul>
+    </div>
+
+    <div class="song-list"></div>
+</div>

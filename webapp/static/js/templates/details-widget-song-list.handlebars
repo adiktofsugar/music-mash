@@ -1,0 +1,15 @@
+{{#if songs }}
+    <ul>
+    {{#each songs}}
+        <li>{{ title }} - {{ artist }}</li>
+    {{/each}}
+    </ul>
+{{/if}}
+
+{{#if error }}
+    <p class="error">{{ error }}</p>
+{{/if}}
+
+{{#if loading }}
+    <p class="info">Loading...</p>
+{{/if}}
